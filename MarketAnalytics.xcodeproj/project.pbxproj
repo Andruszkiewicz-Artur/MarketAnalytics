@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */; };
-		545E6871292541D2006F4B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E6870292541D2006F4B85 /* ContentView.swift */; };
 		545E6873292541D4006F4B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6872292541D4006F4B85 /* Assets.xcassets */; };
 		545E6876292541D4006F4B85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6875292541D4006F4B85 /* Preview Assets.xcassets */; };
+		545E6891292555F8006F4B85 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E6890292555F8006F4B85 /* StockView.swift */; };
+		545E689A29255676006F4B85 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E689929255676006F4B85 /* NewsView.swift */; };
+		545E68A2292556BE006F4B85 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68A1292556BE006F4B85 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		545E686B292541D2006F4B85 /* MarketAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketAnalyticsApp.swift; sourceTree = "<group>"; };
-		545E6870292541D2006F4B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		545E6872292541D4006F4B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		545E6875292541D4006F4B85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		545E6890292555F8006F4B85 /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
+		545E689929255676006F4B85 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		545E68A1292556BE006F4B85 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,14 @@
 		545E686D292541D2006F4B85 /* MarketAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				545E68922925561E006F4B85 /* feature_news */,
+				545E688129255481006F4B85 /* feauter_stock */,
+				545E68802925546E006F4B85 /* feauter_admin_panel */,
+				545E687F2925545E006F4B85 /* feauter_profile */,
+				545E687E29255443006F4B85 /* feauter_messages */,
+				545E687D292553E9006F4B85 /* feauter_login_register */,
+				545E687C2925537E006F4B85 /* core */,
 				545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */,
-				545E6870292541D2006F4B85 /* ContentView.swift */,
 				545E6872292541D4006F4B85 /* Assets.xcassets */,
 				545E6874292541D4006F4B85 /* Preview Content */,
 			);
@@ -65,6 +75,266 @@
 				545E6875292541D4006F4B85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		545E687C2925537E006F4B85 /* core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		545E687D292553E9006F4B85 /* feauter_login_register */ = {
+			isa = PBXGroup;
+			children = (
+				545E6883292554DB006F4B85 /* domain */,
+				545E6882292554D3006F4B85 /* presentation */,
+			);
+			path = feauter_login_register;
+			sourceTree = "<group>";
+		};
+		545E687E29255443006F4B85 /* feauter_messages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = feauter_messages;
+			sourceTree = "<group>";
+		};
+		545E687F2925545E006F4B85 /* feauter_profile */ = {
+			isa = PBXGroup;
+			children = (
+				545E689C29255693006F4B85 /* domain */,
+				545E689B29255685006F4B85 /* presentation */,
+			);
+			path = feauter_profile;
+			sourceTree = "<group>";
+		};
+		545E68802925546E006F4B85 /* feauter_admin_panel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = feauter_admin_panel;
+			sourceTree = "<group>";
+		};
+		545E688129255481006F4B85 /* feauter_stock */ = {
+			isa = PBXGroup;
+			children = (
+				545E688A29255533006F4B85 /* domain */,
+				545E688B29255538006F4B85 /* presentation */,
+			);
+			path = feauter_stock;
+			sourceTree = "<group>";
+		};
+		545E6882292554D3006F4B85 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				545E688629255504006F4B85 /* forget_password */,
+				545E6885292554FE006F4B85 /* registration */,
+				545E6884292554F2006F4B85 /* login */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		545E6883292554DB006F4B85 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		545E6884292554F2006F4B85 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				545E688929255522006F4B85 /* view */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
+		545E6885292554FE006F4B85 /* registration */ = {
+			isa = PBXGroup;
+			children = (
+				545E68882925551E006F4B85 /* view */,
+			);
+			path = registration;
+			sourceTree = "<group>";
+		};
+		545E688629255504006F4B85 /* forget_password */ = {
+			isa = PBXGroup;
+			children = (
+				545E688729255517006F4B85 /* view */,
+			);
+			path = forget_password;
+			sourceTree = "<group>";
+		};
+		545E688729255517006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E68882925551E006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E688929255522006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E688A29255533006F4B85 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		545E688B29255538006F4B85 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				545E688D2925555F006F4B85 /* shere */,
+				545E688C29255543006F4B85 /* stock */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		545E688C29255543006F4B85 /* stock */ = {
+			isa = PBXGroup;
+			children = (
+				545E688E292555E2006F4B85 /* view */,
+			);
+			path = stock;
+			sourceTree = "<group>";
+		};
+		545E688D2925555F006F4B85 /* shere */ = {
+			isa = PBXGroup;
+			children = (
+				545E688F292555E6006F4B85 /* view */,
+			);
+			path = shere;
+			sourceTree = "<group>";
+		};
+		545E688E292555E2006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				545E6890292555F8006F4B85 /* StockView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E688F292555E6006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E68922925561E006F4B85 /* feature_news */ = {
+			isa = PBXGroup;
+			children = (
+				545E689329255629006F4B85 /* domain */,
+				545E689429255632006F4B85 /* presentation */,
+			);
+			path = feature_news;
+			sourceTree = "<group>";
+		};
+		545E689329255629006F4B85 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		545E689429255632006F4B85 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				545E689729255664006F4B85 /* information */,
+				545E68952925563A006F4B85 /* news */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		545E68952925563A006F4B85 /* news */ = {
+			isa = PBXGroup;
+			children = (
+				545E689629255660006F4B85 /* view */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		545E689629255660006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				545E689929255676006F4B85 /* NewsView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E689729255664006F4B85 /* information */ = {
+			isa = PBXGroup;
+			children = (
+				545E68982925566A006F4B85 /* view */,
+			);
+			path = information;
+			sourceTree = "<group>";
+		};
+		545E68982925566A006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E689B29255685006F4B85 /* presentation */ = {
+			isa = PBXGroup;
+			children = (
+				545E689E292556A7006F4B85 /* settings */,
+				545E689D2925569E006F4B85 /* profile */,
+			);
+			path = presentation;
+			sourceTree = "<group>";
+		};
+		545E689C29255693006F4B85 /* domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		545E689D2925569E006F4B85 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				545E689F292556AD006F4B85 /* view */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		545E689E292556A7006F4B85 /* settings */ = {
+			isa = PBXGroup;
+			children = (
+				545E68A0292556B1006F4B85 /* view */,
+			);
+			path = settings;
+			sourceTree = "<group>";
+		};
+		545E689F292556AD006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				545E68A1292556BE006F4B85 /* ProfileView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		545E68A0292556B1006F4B85 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				545E6871292541D2006F4B85 /* ContentView.swift in Sources */,
+				545E6891292555F8006F4B85 /* StockView.swift in Sources */,
+				545E689A29255676006F4B85 /* NewsView.swift in Sources */,
+				545E68A2292556BE006F4B85 /* ProfileView.swift in Sources */,
 				545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +542,8 @@
 				DEVELOPMENT_TEAM = 4B2X8MNS9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Market Analytics";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +573,8 @@
 				DEVELOPMENT_TEAM = 4B2X8MNS9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Market Analytics";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
