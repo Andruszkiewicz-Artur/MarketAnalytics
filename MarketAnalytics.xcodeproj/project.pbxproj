@@ -3,16 +3,25 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29B8F99016B3A0E357B881BC /* Pods_MarketAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */; };
 		545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */; };
 		545E6873292541D4006F4B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6872292541D4006F4B85 /* Assets.xcassets */; };
 		545E6876292541D4006F4B85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6875292541D4006F4B85 /* Preview Assets.xcassets */; };
 		545E6891292555F8006F4B85 /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E6890292555F8006F4B85 /* StockView.swift */; };
 		545E689A29255676006F4B85 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E689929255676006F4B85 /* NewsView.swift */; };
 		545E68A2292556BE006F4B85 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68A1292556BE006F4B85 /* ProfileView.swift */; };
+		545E68A629257F90006F4B85 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68A529257F90006F4B85 /* Color.swift */; };
+		545E68A8292586D8006F4B85 /* ForgetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68A7292586D8006F4B85 /* ForgetPasswordView.swift */; };
+		545E68AA292586E8006F4B85 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68A9292586E8006F4B85 /* RegistrationView.swift */; };
+		545E68AC2925870E006F4B85 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68AB2925870E006F4B85 /* LoginView.swift */; };
+		545E68AE292587EF006F4B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E68AD292587EF006F4B85 /* ContentView.swift */; };
+		54D5CE952926999200B8275E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 54D5CE942926999200B8275E /* GoogleService-Info.plist */; };
+		54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CE9629269A9600B8275E /* AppDelegate.swift */; };
+		54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CE9929269AF000B8275E /* AppViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +32,17 @@
 		545E6890292555F8006F4B85 /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
 		545E689929255676006F4B85 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		545E68A1292556BE006F4B85 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		545E68A529257F90006F4B85 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		545E68A7292586D8006F4B85 /* ForgetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordView.swift; sourceTree = "<group>"; };
+		545E68A9292586E8006F4B85 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		545E68AB2925870E006F4B85 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		545E68AD292587EF006F4B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54D5CE942926999200B8275E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54D5CE9629269A9600B8275E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		54D5CE9929269AF000B8275E /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketAnalytics.release.xcconfig"; path = "Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B8F99016B3A0E357B881BC /* Pods_MarketAnalytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +62,8 @@
 			children = (
 				545E686D292541D2006F4B85 /* MarketAnalytics */,
 				545E686C292541D2006F4B85 /* Products */,
+				6DE2257269DEA95A4615D2AE /* Pods */,
+				A4B1DC9562EC077A2D90D420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +86,7 @@
 				545E687D292553E9006F4B85 /* feauter_login_register */,
 				545E687C2925537E006F4B85 /* core */,
 				545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */,
+				545E68AD292587EF006F4B85 /* ContentView.swift */,
 				545E6872292541D4006F4B85 /* Assets.xcassets */,
 				545E6874292541D4006F4B85 /* Preview Content */,
 			);
@@ -80,6 +104,8 @@
 		545E687C2925537E006F4B85 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				54D5CE932926998B00B8275E /* data */,
+				545E68A329257F69006F4B85 /* extension */,
 			);
 			path = core;
 			sourceTree = "<group>";
@@ -146,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				545E688929255522006F4B85 /* view */,
+				545E68AB2925870E006F4B85 /* LoginView.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -169,6 +196,7 @@
 		545E688729255517006F4B85 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				545E68A7292586D8006F4B85 /* ForgetPasswordView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -176,6 +204,7 @@
 		545E68882925551E006F4B85 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				545E68A9292586E8006F4B85 /* RegistrationView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -337,6 +366,49 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		545E68A329257F69006F4B85 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				545E68A429257F7C006F4B85 /* color */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
+		545E68A429257F7C006F4B85 /* color */ = {
+			isa = PBXGroup;
+			children = (
+				545E68A529257F90006F4B85 /* Color.swift */,
+			);
+			path = color;
+			sourceTree = "<group>";
+		};
+		54D5CE932926998B00B8275E /* data */ = {
+			isa = PBXGroup;
+			children = (
+				54D5CE942926999200B8275E /* GoogleService-Info.plist */,
+				54D5CE9629269A9600B8275E /* AppDelegate.swift */,
+				54D5CE9929269AF000B8275E /* AppViewModel.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		6DE2257269DEA95A4615D2AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */,
+				981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4B1DC9562EC077A2D90D420 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -344,9 +416,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 545E6879292541D4006F4B85 /* Build configuration list for PBXNativeTarget "MarketAnalytics" */;
 			buildPhases = (
+				F6EAA62C9B6C3F0B42F65E7E /* [CP] Check Pods Manifest.lock */,
 				545E6867292541D2006F4B85 /* Sources */,
 				545E6868292541D2006F4B85 /* Frameworks */,
 				545E6869292541D2006F4B85 /* Resources */,
+				284A62FEC6D8BF9C34E44678 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -373,7 +447,7 @@
 				};
 			};
 			buildConfigurationList = 545E6866292541D2006F4B85 /* Build configuration list for PBXProject "MarketAnalytics" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -397,10 +471,53 @@
 			files = (
 				545E6876292541D4006F4B85 /* Preview Assets.xcassets in Resources */,
 				545E6873292541D4006F4B85 /* Assets.xcassets in Resources */,
+				54D5CE952926999200B8275E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		284A62FEC6D8BF9C34E44678 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6EAA62C9B6C3F0B42F65E7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MarketAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		545E6867292541D2006F4B85 /* Sources */ = {
@@ -408,8 +525,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				545E6891292555F8006F4B85 /* StockView.swift in Sources */,
+				545E68A629257F90006F4B85 /* Color.swift in Sources */,
 				545E689A29255676006F4B85 /* NewsView.swift in Sources */,
+				545E68AA292586E8006F4B85 /* RegistrationView.swift in Sources */,
 				545E68A2292556BE006F4B85 /* ProfileView.swift in Sources */,
+				545E68AE292587EF006F4B85 /* ContentView.swift in Sources */,
+				545E68A8292586D8006F4B85 /* ForgetPasswordView.swift in Sources */,
+				545E68AC2925870E006F4B85 /* LoginView.swift in Sources */,
+				54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */,
+				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
 				545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +657,7 @@
 		};
 		545E687A292541D4006F4B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -564,6 +689,7 @@
 		};
 		545E687B292541D4006F4B85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

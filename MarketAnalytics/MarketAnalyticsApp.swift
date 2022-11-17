@@ -6,12 +6,18 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct MarketAnalyticsApp: App {
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            StockView()
+            let vm: AppViewModel = AppViewModel()
+            
+            ContentView()
+                .environmentObject(vm)
         }
     }
 }

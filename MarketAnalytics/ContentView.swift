@@ -8,14 +8,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var vmAuth: AppViewModel
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Its me!")
+        if vmAuth.isSignedIn {
+            TabView() {
+                StockView()
+                    .tabItem {
+                        Image(systemName: "waveform.path.ecg")
+                        Text("Stock")
+                    }
+                NewsView()
+                    .tabItem {
+                        Image(systemName: "newspaper")
+                        Text("News")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+            }
+            .accentColor(Color.theme.accent)
+        } else {
+            LoginView()
         }
-        .padding()
     }
 }
 
