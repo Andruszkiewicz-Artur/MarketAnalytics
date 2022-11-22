@@ -14,10 +14,12 @@ struct MarketAnalyticsApp: App {
     
     var body: some Scene {
         WindowGroup {
-            let vm: AppViewModel = AppViewModel()
+            let vmApp: AppViewModel = AppViewModel()
+            let vmNavigation: NavigationViewModel = NavigationViewModel()
             
             ContentView()
-                .environmentObject(vm)
+                .environmentObject(vmApp)
+                .environmentObject(vmNavigation)
         }
     }
 }

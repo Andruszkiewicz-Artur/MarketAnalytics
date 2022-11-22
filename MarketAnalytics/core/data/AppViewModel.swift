@@ -12,8 +12,6 @@ class AppViewModel: ObservableObject {
     
     let auth = Auth.auth()
     
-    var isSignedIn: Bool {
-        return auth.currentUser != nil
-    }
+    var isSignedIn: Bool = Auth.auth().currentUser != nil
     
 }

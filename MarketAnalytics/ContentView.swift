@@ -9,31 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject var vmAuth: AppViewModel
+    @EnvironmentObject var vmApp: AppViewModel
+    @EnvironmentObject var vmNavigation: NavigationViewModel
     
     var body: some View {
-        if vmAuth.isSignedIn {
-            TabView() {
-                StockView()
-                    .tabItem {
-                        Image(systemName: "waveform.path.ecg")
-                        Text("Stock")
-                    }
-                NewsView()
-                    .tabItem {
-                        Image(systemName: "newspaper")
-                        Text("News")
-                    }
-                ProfileView()
-                    .tabItem {
-                        Image(systemName: "person")
-                        Text("Profile")
-                    }
+        NavigationStack(path: $vmNavigation.path) {
+            if vmApp.isSignedIn {
+                TabView() {
+                    StockView()
+                        .tabItem {
+                            Image(systemName: "waveform.path.ecg")
+                            Text("Stock")
+                        }
+                    NewsView()
+                        .tabItem {
+                            Image(systemName: "newspaper")
+                            Text("News")
+                        }
+                    ProfileView()
+                        .tabItem {
+                            Image(systemName: "person")
+                            Text("Profile")
+                        }
+                }
+                .accentColor(Color.theme.accent)
+            } else {
+                ChooseOptionView()
             }
-            .accentColor(Color.theme.accent)
-        } else {
-            LoginView()
         }
+        .accentColor(Color.primary)
     }
 }
 
