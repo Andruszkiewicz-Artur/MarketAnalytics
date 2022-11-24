@@ -42,6 +42,8 @@
 		54DD1B22292F5AFC0082AE3E /* Int64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B21292F5AFC0082AE3E /* Int64.swift */; };
 		54DD1B24292FEC180082AE3E /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B23292FEC180082AE3E /* ChangePasswordViewModel.swift */; };
 		54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B25292FEE890082AE3E /* ResultEnum.swift */; };
+		54DD1B2A292FF2DE0082AE3E /* ChangeEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B29292FF2DE0082AE3E /* ChangeEmailView.swift */; };
+		54DD1B2C292FF2EE0082AE3E /* ChangeEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B2B292FF2EE0082AE3E /* ChangeEmailViewModel.swift */; };
 		54E12AA4292CC75A00A49B8D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA3292CC75A00A49B8D /* FirebaseAuth */; };
 		54E12AA6292CC75A00A49B8D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA5292CC75A00A49B8D /* FirebaseDatabase */; };
 		54E12AA8292CC75A00A49B8D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA7292CC75A00A49B8D /* FirebaseStorage */; };
@@ -90,6 +92,8 @@
 		54DD1B21292F5AFC0082AE3E /* Int64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int64.swift; sourceTree = "<group>"; };
 		54DD1B23292FEC180082AE3E /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		54DD1B25292FEE890082AE3E /* ResultEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultEnum.swift; sourceTree = "<group>"; };
+		54DD1B29292FF2DE0082AE3E /* ChangeEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailView.swift; sourceTree = "<group>"; };
+		54DD1B2B292FF2EE0082AE3E /* ChangeEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewModel.swift; sourceTree = "<group>"; };
 		54E12AB2292D206B00A49B8D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = MarketAnalytics/feauter_profile/presentation/settings/UserModel.swift; sourceTree = SOURCE_ROOT; };
 		54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -382,6 +386,7 @@
 		545E689B29255685006F4B85 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				54DD1B27292FF2CC0082AE3E /* change_email */,
 				54DD1B16292EABA40082AE3E /* change_password */,
 				54DD1B15292EAB970082AE3E /* edit_profile */,
 				545E689E292556A7006F4B85 /* settings */,
@@ -555,6 +560,23 @@
 			path = Int;
 			sourceTree = "<group>";
 		};
+		54DD1B27292FF2CC0082AE3E /* change_email */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B28292FF2D30082AE3E /* view */,
+				54DD1B2B292FF2EE0082AE3E /* ChangeEmailViewModel.swift */,
+			);
+			path = change_email;
+			sourceTree = "<group>";
+		};
+		54DD1B28292FF2D30082AE3E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B29292FF2DE0082AE3E /* ChangeEmailView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		54E12AAF292CDB1700A49B8D /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -683,11 +705,13 @@
 				54D5CEA02926A03A00B8275E /* Navigation.swift in Sources */,
 				54DD1B0F292E84F60082AE3E /* LikeTypeEnum.swift in Sources */,
 				54D5CEAB2926A9F800B8275E /* Text.swift in Sources */,
+				54DD1B2A292FF2DE0082AE3E /* ChangeEmailView.swift in Sources */,
 				54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */,
 				54D1233B292A934800D1E41F /* SettingsViewModel.swift in Sources */,
 				54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */,
 				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
 				54E12AB5292D44D200A49B8D /* ProfileViewModel.swift in Sources */,
+				54DD1B2C292FF2EE0082AE3E /* ChangeEmailViewModel.swift in Sources */,
 				545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */,
 				54D5CEAE2926C48B00B8275E /* CustomTextField.swift in Sources */,
 				54DD1B22292F5AFC0082AE3E /* Int64.swift in Sources */,

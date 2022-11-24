@@ -47,6 +47,9 @@ struct ProfileView: View {
                 case "ChangePasswordProfile": do {
                     ChangePasswordView()
                 }
+                case "ChangeEmailProfile": do {
+                    ChangeEmailView()
+                }
                 default: do {  }
             }
         }

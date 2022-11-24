@@ -26,6 +26,10 @@ struct SettingsView: View {
                 NavigationLink(value: "ChangePasswordProfile") {
                     Text("Change password")
                 }
+                
+                NavigationLink(value: "ChangeEmailProfile") {
+                    Text("Change email")
+                }
             }
             
             Section {

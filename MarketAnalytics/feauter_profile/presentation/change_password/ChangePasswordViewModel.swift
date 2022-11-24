@@ -37,7 +37,7 @@ class ChangePasswordViewModel: ObservableObject {
         
         vm.auth.currentUser?.updatePassword(to: password) { error in
             guard error == nil else {
-                self.presentMessage = "Problem with changing password or you need logOut and login again!"
+                self.presentMessage = "Problem with changing password or you need log out and login again!"
                 return
             }
         }
