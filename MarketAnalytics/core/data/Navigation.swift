@@ -16,7 +16,23 @@ class NavigationViewModel: ObservableObject {
         }
     }
     
-    func backTooRoot() {
-        path = NavigationPath()
+    var loginPath = NavigationPath() {
+        didSet {
+            print("path count: \(path.count)")
+        }
+    }
+    
+    func backTooRoot(where back: Option) {
+        switch back {
+        case .login: loginPath = NavigationPath()
+        case .standard: path = NavigationPath()
+        }
+    }
+    
+    @Published var chooseOption: Bool = false
+    
+    enum Option {
+        case login
+        case standard
     }
 }

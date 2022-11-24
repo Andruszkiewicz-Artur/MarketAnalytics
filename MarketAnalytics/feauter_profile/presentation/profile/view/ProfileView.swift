@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
+    @EnvironmentObject private var vmApp: AppViewModel
+    @StateObject private var vm: ProfileViewModel = ProfileViewModel()
+    
     var body: some View {
         VStack {
-            Text("Profile")
+            TopBarProfileView(user: vm.user)
+            
+            DescriptionProfileView(description: vm.user.description)
+            
+            OpinionsProfileView(opinions: vm.user.opinions)
+            
+            Spacer()
         }
         .padding([.leading, .trailing])
-        .navigationBarTitleDisplayMode(.inline)
-        .navigationTitle("User Name")
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 NavigationLink(value: "Settings") {
@@ -22,15 +30,38 @@ struct ProfileView: View {
                         .foregroundColor(Color.primary)
                 }
             }
+            
+            ToolbarItem(placement: .navigationBarLeading) {
+                Text(vmApp.user?.userName ?? "")
+                    .font(.title2)
+            }
         }
         .navigationDestination(for: String.self) { string in
             switch string {
-            case "Settings": do {
-                SettingsView()
-            }
-            default: do {  }
+                case "Settings": do {
+                    SettingsView()
+                }
+                case "EditProfile": do {
+                    EditProfileView()
+                }
+                case "ChangePasswordProfile": do {
+                    ChangePasswordView()
+                }
+                default: do {  }
             }
         }
+        .navigationTitle("Account")
+        .accentColor(.primary)
+        .onAppear {
+            if let user = vmApp.user {
+                vm.user = user
+            }
+        }
+//        .onChange(of: vmApp.user) { newValue in
+//            if let user = vmApp.user {
+//                vm.user = user
+//            }
+//        }
     }
 }
 

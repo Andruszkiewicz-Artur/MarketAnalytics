@@ -54,7 +54,18 @@ class RegistrationViewModel: ObservableObject {
                 return
             }
             
-            vmNavigation.backTooRoot()
+            vm.setUpUser()
+            
+            guard let id = vm.userId else {
+                self.errorMessage = "Problem with database!"
+                return
+            }
+                    
+            vm.db.child("user").child(id).child("username").setValue(self.userName)
+            vm.db.child("user").child(id).child("isAdmin").setValue(false)
+            
+            vmNavigation.backTooRoot(where: .login)
+            vm.isSignedIn = true
         }
     }
     

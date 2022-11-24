@@ -13,8 +13,20 @@ struct SettingsView: View {
     @EnvironmentObject private var vmNavigation: NavigationViewModel
     @StateObject private var vm: SettingsViewModel = SettingsViewModel()
     
+    
+    
     var body: some View {
         List {
+            Section {
+                NavigationLink(value: "EditProfile") {
+                    Text("Edit profile")
+                }
+                
+                NavigationLink(value: "ChangePasswordProfile") {
+                    Text("Change password to profile")
+                }
+            }
+            
             Section {
                 HStack {
                     Spacer()
@@ -27,6 +39,8 @@ struct SettingsView: View {
                 }
             }
         }
+        .navigationTitle("Settings")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -37,7 +37,8 @@ class LoginViewModel: ObservableObject {
                 return
             }
             
-            vmNavigation.backTooRoot()
+            vmNavigation.backTooRoot(where: .login)
+            vm.isSignedIn = true
         }
         
         print(vm.isSignedIn)

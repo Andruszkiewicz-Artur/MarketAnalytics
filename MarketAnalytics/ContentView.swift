@@ -14,26 +14,25 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack(path: $vmNavigation.path) {
-            if vmApp.isSignedIn {
-                TabView() {
-                    StockView()
-                        .tabItem {
-                            Image(systemName: "waveform.path.ecg")
-                            Text("Stock")
-                        }
-                    NewsView()
-                        .tabItem {
-                            Image(systemName: "newspaper")
-                            Text("News")
-                        }
-                    ProfileView()
-                        .tabItem {
-                            Image(systemName: "person")
-                            Text("Profile")
-                        }
-                }
-                .accentColor(Color.theme.accent)
-            } else {
+            TabView() {
+                StockView()
+                    .tabItem {
+                        Image(systemName: "waveform.path.ecg")
+                        Text("Stock")
+                    }
+                NewsView()
+                    .tabItem {
+                        Image(systemName: "newspaper")
+                        Text("News")
+                    }
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Profile")
+                    }
+            }
+            .accentColor(Color.theme.accent)
+            .fullScreenCover(isPresented: $vmApp.isSignedIn) {
                 ChooseOptionView()
             }
         }

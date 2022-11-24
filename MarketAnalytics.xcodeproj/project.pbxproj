@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29B8F99016B3A0E357B881BC /* Pods_MarketAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */; };
 		545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */; };
 		545E6873292541D4006F4B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6872292541D4006F4B85 /* Assets.xcassets */; };
 		545E6876292541D4006F4B85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6875292541D4006F4B85 /* Preview Assets.xcassets */; };
@@ -31,6 +30,24 @@
 		54D5CEB02926C82000B8275E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CEAF2926C82000B8275E /* LoginViewModel.swift */; };
 		54D5CEB22926D2B200B8275E /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CEB12926D2B200B8275E /* RegistrationViewModel.swift */; };
 		54D5CEB42926D87C00B8275E /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5CEB32926D87C00B8275E /* ForgetPasswordViewModel.swift */; };
+		54DD1B08292E7D480082AE3E /* OpinionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B07292E7D480082AE3E /* OpinionsModel.swift */; };
+		54DD1B0A292E82BE0082AE3E /* TopBarProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B09292E82BE0082AE3E /* TopBarProfileView.swift */; };
+		54DD1B0C292E84B00082AE3E /* LikeProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B0B292E84B00082AE3E /* LikeProfileView.swift */; };
+		54DD1B0F292E84F60082AE3E /* LikeTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B0E292E84F60082AE3E /* LikeTypeEnum.swift */; };
+		54DD1B11292E87890082AE3E /* DescriptionProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B10292E87890082AE3E /* DescriptionProfileView.swift */; };
+		54DD1B14292E88E80082AE3E /* OpinionsProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B13292E88E80082AE3E /* OpinionsProfileView.swift */; };
+		54DD1B1A292EAD100082AE3E /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B19292EAD100082AE3E /* ChangePasswordView.swift */; };
+		54DD1B1C292EAD420082AE3E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B1B292EAD420082AE3E /* EditProfileView.swift */; };
+		54DD1B1E292EFC8A0082AE3E /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B1D292EFC8A0082AE3E /* EditProfileViewModel.swift */; };
+		54DD1B22292F5AFC0082AE3E /* Int64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B21292F5AFC0082AE3E /* Int64.swift */; };
+		54E12AA4292CC75A00A49B8D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA3292CC75A00A49B8D /* FirebaseAuth */; };
+		54E12AA6292CC75A00A49B8D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA5292CC75A00A49B8D /* FirebaseDatabase */; };
+		54E12AA8292CC75A00A49B8D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA7292CC75A00A49B8D /* FirebaseStorage */; };
+		54E12AAA292CC96A00A49B8D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA9292CC96A00A49B8D /* FirebaseAnalytics */; };
+		54E12AAC292CC9C300A49B8D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AAB292CC9C300A49B8D /* FirebaseAnalyticsSwift */; };
+		54E12AAE292CCD5800A49B8D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AAD292CCD5800A49B8D /* FirebaseFirestore */; };
+		54E12AB3292D206B00A49B8D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E12AB2292D206B00A49B8D /* UserModel.swift */; };
+		54E12AB5292D44D200A49B8D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +75,19 @@
 		54D5CEAF2926C82000B8275E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		54D5CEB12926D2B200B8275E /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		54D5CEB32926D87C00B8275E /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
-		981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketAnalytics.release.xcconfig"; path = "Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics.release.xcconfig"; sourceTree = "<group>"; };
-		B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarketAnalytics.debug.xcconfig"; path = "Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
-		FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarketAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DD1B07292E7D480082AE3E /* OpinionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionsModel.swift; sourceTree = "<group>"; };
+		54DD1B09292E82BE0082AE3E /* TopBarProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarProfileView.swift; sourceTree = "<group>"; };
+		54DD1B0B292E84B00082AE3E /* LikeProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeProfileView.swift; sourceTree = "<group>"; };
+		54DD1B0E292E84F60082AE3E /* LikeTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTypeEnum.swift; sourceTree = "<group>"; };
+		54DD1B10292E87890082AE3E /* DescriptionProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionProfileView.swift; sourceTree = "<group>"; };
+		54DD1B13292E88E80082AE3E /* OpinionsProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionsProfileView.swift; sourceTree = "<group>"; };
+		54DD1B19292EAD100082AE3E /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		54DD1B1B292EAD420082AE3E /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		54DD1B1D292EFC8A0082AE3E /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		54DD1B1F292F53870082AE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		54DD1B21292F5AFC0082AE3E /* Int64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int64.swift; sourceTree = "<group>"; };
+		54E12AB2292D206B00A49B8D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = MarketAnalytics/feauter_profile/presentation/settings/UserModel.swift; sourceTree = SOURCE_ROOT; };
+		54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +95,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				29B8F99016B3A0E357B881BC /* Pods_MarketAnalytics.framework in Frameworks */,
+				54E12AAC292CC9C300A49B8D /* FirebaseAnalyticsSwift in Frameworks */,
+				54E12AA6292CC75A00A49B8D /* FirebaseDatabase in Frameworks */,
+				54E12AA8292CC75A00A49B8D /* FirebaseStorage in Frameworks */,
+				54E12AAA292CC96A00A49B8D /* FirebaseAnalytics in Frameworks */,
+				54E12AA4292CC75A00A49B8D /* FirebaseAuth in Frameworks */,
+				54E12AAE292CCD5800A49B8D /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,8 +112,6 @@
 			children = (
 				545E686D292541D2006F4B85 /* MarketAnalytics */,
 				545E686C292541D2006F4B85 /* Products */,
-				6DE2257269DEA95A4615D2AE /* Pods */,
-				A4B1DC9562EC077A2D90D420 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +126,7 @@
 		545E686D292541D2006F4B85 /* MarketAnalytics */ = {
 			isa = PBXGroup;
 			children = (
+				54DD1B1F292F53870082AE3E /* Info.plist */,
 				545E68922925561E006F4B85 /* feature_news */,
 				545E688129255481006F4B85 /* feauter_stock */,
 				545E68802925546E006F4B85 /* feauter_admin_panel */,
@@ -122,6 +153,7 @@
 		545E687C2925537E006F4B85 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				54E12AB0292D205900A49B8D /* domain */,
 				54D5CEA82926A9D000B8275E /* New Group */,
 				54D5CE932926998B00B8275E /* data */,
 				545E68A329257F69006F4B85 /* extension */,
@@ -184,6 +216,7 @@
 		545E6883292554DB006F4B85 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				54E12AAF292CDB1700A49B8D /* model */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -345,6 +378,8 @@
 		545E689B29255685006F4B85 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				54DD1B16292EABA40082AE3E /* change_password */,
+				54DD1B15292EAB970082AE3E /* edit_profile */,
 				545E689E292556A7006F4B85 /* settings */,
 				545E689D2925569E006F4B85 /* profile */,
 			);
@@ -354,6 +389,7 @@
 		545E689C29255693006F4B85 /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				54DD1B04292E7CA10082AE3E /* model */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -362,6 +398,8 @@
 			isa = PBXGroup;
 			children = (
 				545E689F292556AD006F4B85 /* view */,
+				54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */,
+				54DD1B0E292E84F60082AE3E /* LikeTypeEnum.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -379,6 +417,10 @@
 			isa = PBXGroup;
 			children = (
 				545E68A1292556BE006F4B85 /* ProfileView.swift */,
+				54DD1B09292E82BE0082AE3E /* TopBarProfileView.swift */,
+				54DD1B0B292E84B00082AE3E /* LikeProfileView.swift */,
+				54DD1B10292E87890082AE3E /* DescriptionProfileView.swift */,
+				54DD1B13292E88E80082AE3E /* OpinionsProfileView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -394,6 +436,7 @@
 		545E68A329257F69006F4B85 /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				54DD1B20292F5AEA0082AE3E /* Int */,
 				545E68A429257F7C006F4B85 /* color */,
 			);
 			path = extension;
@@ -459,21 +502,76 @@
 			path = textField;
 			sourceTree = "<group>";
 		};
-		6DE2257269DEA95A4615D2AE /* Pods */ = {
+		54DD1B04292E7CA10082AE3E /* model */ = {
 			isa = PBXGroup;
 			children = (
-				B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */,
-				981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */,
 			);
-			path = Pods;
+			path = model;
 			sourceTree = "<group>";
 		};
-		A4B1DC9562EC077A2D90D420 /* Frameworks */ = {
+		54DD1B15292EAB970082AE3E /* edit_profile */ = {
 			isa = PBXGroup;
 			children = (
-				FDFB9E6F19772027AA56A253 /* Pods_MarketAnalytics.framework */,
+				54DD1B17292EABCC0082AE3E /* view */,
+				54DD1B1D292EFC8A0082AE3E /* EditProfileViewModel.swift */,
 			);
-			name = Frameworks;
+			path = edit_profile;
+			sourceTree = "<group>";
+		};
+		54DD1B16292EABA40082AE3E /* change_password */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B18292EABD00082AE3E /* view */,
+			);
+			path = change_password;
+			sourceTree = "<group>";
+		};
+		54DD1B17292EABCC0082AE3E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B1B292EAD420082AE3E /* EditProfileView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		54DD1B18292EABD00082AE3E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B19292EAD100082AE3E /* ChangePasswordView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		54DD1B20292F5AEA0082AE3E /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				54DD1B21292F5AFC0082AE3E /* Int64.swift */,
+			);
+			path = Int;
+			sourceTree = "<group>";
+		};
+		54E12AAF292CDB1700A49B8D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		54E12AB0292D205900A49B8D /* domain */ = {
+			isa = PBXGroup;
+			children = (
+				54E12AB1292D205F00A49B8D /* model */,
+			);
+			path = domain;
+			sourceTree = "<group>";
+		};
+		54E12AB1292D205F00A49B8D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				54E12AB2292D206B00A49B8D /* UserModel.swift */,
+				54DD1B07292E7D480082AE3E /* OpinionsModel.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -483,17 +581,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 545E6879292541D4006F4B85 /* Build configuration list for PBXNativeTarget "MarketAnalytics" */;
 			buildPhases = (
-				F6EAA62C9B6C3F0B42F65E7E /* [CP] Check Pods Manifest.lock */,
 				545E6867292541D2006F4B85 /* Sources */,
 				545E6868292541D2006F4B85 /* Frameworks */,
 				545E6869292541D2006F4B85 /* Resources */,
-				284A62FEC6D8BF9C34E44678 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = MarketAnalytics;
+			packageProductDependencies = (
+				54E12AA3292CC75A00A49B8D /* FirebaseAuth */,
+				54E12AA5292CC75A00A49B8D /* FirebaseDatabase */,
+				54E12AA7292CC75A00A49B8D /* FirebaseStorage */,
+				54E12AA9292CC96A00A49B8D /* FirebaseAnalytics */,
+				54E12AAB292CC9C300A49B8D /* FirebaseAnalyticsSwift */,
+				54E12AAD292CCD5800A49B8D /* FirebaseFirestore */,
+			);
 			productName = MarketAnalytics;
 			productReference = 545E686B292541D2006F4B85 /* MarketAnalytics.app */;
 			productType = "com.apple.product-type.application";
@@ -522,6 +626,9 @@
 				Base,
 			);
 			mainGroup = 545E6862292541D2006F4B85;
+			packageReferences = (
+				54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 545E686C292541D2006F4B85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -544,54 +651,15 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		284A62FEC6D8BF9C34E44678 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MarketAnalytics/Pods-MarketAnalytics-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6EAA62C9B6C3F0B42F65E7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MarketAnalytics-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		545E6867292541D2006F4B85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DD1B1C292EAD420082AE3E /* EditProfileView.swift in Sources */,
+				54DD1B1A292EAD100082AE3E /* ChangePasswordView.swift in Sources */,
 				545E6891292555F8006F4B85 /* StockView.swift in Sources */,
+				54E12AB3292D206B00A49B8D /* UserModel.swift in Sources */,
 				54D5CEB22926D2B200B8275E /* RegistrationViewModel.swift in Sources */,
 				545E68A629257F90006F4B85 /* Color.swift in Sources */,
 				545E689A29255676006F4B85 /* NewsView.swift in Sources */,
@@ -599,18 +667,27 @@
 				54D5CEB02926C82000B8275E /* LoginViewModel.swift in Sources */,
 				545E68A2292556BE006F4B85 /* ProfileView.swift in Sources */,
 				545E68AE292587EF006F4B85 /* ContentView.swift in Sources */,
+				54DD1B11292E87890082AE3E /* DescriptionProfileView.swift in Sources */,
 				54D5CE9E29269E7200B8275E /* ChooseOptionView.swift in Sources */,
+				54DD1B1E292EFC8A0082AE3E /* EditProfileViewModel.swift in Sources */,
 				545E68A8292586D8006F4B85 /* ForgetPasswordView.swift in Sources */,
 				54D5CEB42926D87C00B8275E /* ForgetPasswordViewModel.swift in Sources */,
 				545E68AC2925870E006F4B85 /* LoginView.swift in Sources */,
+				54DD1B08292E7D480082AE3E /* OpinionsModel.swift in Sources */,
 				54D5CEA02926A03A00B8275E /* Navigation.swift in Sources */,
+				54DD1B0F292E84F60082AE3E /* LikeTypeEnum.swift in Sources */,
 				54D5CEAB2926A9F800B8275E /* Text.swift in Sources */,
 				54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */,
 				54D1233B292A934800D1E41F /* SettingsViewModel.swift in Sources */,
 				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
+				54E12AB5292D44D200A49B8D /* ProfileViewModel.swift in Sources */,
 				545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */,
 				54D5CEAE2926C48B00B8275E /* CustomTextField.swift in Sources */,
+				54DD1B22292F5AFC0082AE3E /* Int64.swift in Sources */,
+				54DD1B0A292E82BE0082AE3E /* TopBarProfileView.swift in Sources */,
 				54D12339292A927100D1E41F /* SettingsView.swift in Sources */,
+				54DD1B0C292E84B00082AE3E /* LikeProfileView.swift in Sources */,
+				54DD1B14292E88E80082AE3E /* OpinionsProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,7 +810,6 @@
 		};
 		545E687A292541D4006F4B85 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7E1FF678A40E3EFE7680E61 /* Pods-MarketAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -743,13 +819,14 @@
 				DEVELOPMENT_TEAM = 4B2X8MNS9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarketAnalytics/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Market Analytics";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -757,15 +834,17 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.future.MarketAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		545E687B292541D4006F4B85 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 981746ACFF141F4548D870CB /* Pods-MarketAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -775,13 +854,14 @@
 				DEVELOPMENT_TEAM = 4B2X8MNS9M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MarketAnalytics/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Market Analytics";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -789,9 +869,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.future.MarketAnalytics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -817,6 +900,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54E12AA3292CC75A00A49B8D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		54E12AA5292CC75A00A49B8D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		54E12AA7292CC75A00A49B8D /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		54E12AA9292CC96A00A49B8D /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		54E12AAB292CC9C300A49B8D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		54E12AAD292CCD5800A49B8D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 545E6863292541D2006F4B85 /* Project object */;
 }

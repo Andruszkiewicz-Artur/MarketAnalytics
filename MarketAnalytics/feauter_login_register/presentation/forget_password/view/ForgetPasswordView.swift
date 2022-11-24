@@ -12,10 +12,6 @@ struct ForgetPasswordView: View {
     @StateObject private var vm: ForgetPasswordViewModel = ForgetPasswordViewModel()
     @EnvironmentObject private var vmApp: AppViewModel
     
-    init() {
-        print("open forget password")
-    }
-    
     var body: some View {
         VStack {
             Text("Forget Password?")

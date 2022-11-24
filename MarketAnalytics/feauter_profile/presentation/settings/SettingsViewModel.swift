@@ -14,11 +14,11 @@ class SettingsViewModel: ObservableObject {
         
         do {
             try vm.auth.signOut()
-            vmNavigation.path = NavigationPath()
+            vm.removeUser()
+            vmNavigation.backTooRoot(where: .standard)
             print("Log Out")
         } catch {
             print(error)
         }
     }
-    
 }
