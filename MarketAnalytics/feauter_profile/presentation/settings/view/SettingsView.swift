@@ -12,6 +12,7 @@ struct SettingsView: View {
     @EnvironmentObject private var vmApp: AppViewModel
     @EnvironmentObject private var vmNavigation: NavigationViewModel
     @StateObject private var vm: SettingsViewModel = SettingsViewModel()
+    @Environment(\.dismiss) private var dismiss
     
     
     
@@ -23,7 +24,7 @@ struct SettingsView: View {
                 }
                 
                 NavigationLink(value: "ChangePasswordProfile") {
-                    Text("Change password to profile")
+                    Text("Change password")
                 }
             }
             
@@ -34,6 +35,7 @@ struct SettingsView: View {
                         .foregroundColor(Color.red)
                         .onTapGesture(count: 1) {
                             vm.logOut(vm: vmApp, vmNavigation: vmNavigation)
+                            dismiss()
                         }
                     Spacer()
                 }

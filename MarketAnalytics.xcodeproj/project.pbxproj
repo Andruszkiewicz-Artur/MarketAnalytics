@@ -40,6 +40,8 @@
 		54DD1B1C292EAD420082AE3E /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B1B292EAD420082AE3E /* EditProfileView.swift */; };
 		54DD1B1E292EFC8A0082AE3E /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B1D292EFC8A0082AE3E /* EditProfileViewModel.swift */; };
 		54DD1B22292F5AFC0082AE3E /* Int64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B21292F5AFC0082AE3E /* Int64.swift */; };
+		54DD1B24292FEC180082AE3E /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B23292FEC180082AE3E /* ChangePasswordViewModel.swift */; };
+		54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD1B25292FEE890082AE3E /* ResultEnum.swift */; };
 		54E12AA4292CC75A00A49B8D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA3292CC75A00A49B8D /* FirebaseAuth */; };
 		54E12AA6292CC75A00A49B8D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA5292CC75A00A49B8D /* FirebaseDatabase */; };
 		54E12AA8292CC75A00A49B8D /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AA7292CC75A00A49B8D /* FirebaseStorage */; };
@@ -86,6 +88,8 @@
 		54DD1B1D292EFC8A0082AE3E /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		54DD1B1F292F53870082AE3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		54DD1B21292F5AFC0082AE3E /* Int64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int64.swift; sourceTree = "<group>"; };
+		54DD1B23292FEC180082AE3E /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		54DD1B25292FEE890082AE3E /* ResultEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultEnum.swift; sourceTree = "<group>"; };
 		54E12AB2292D206B00A49B8D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = MarketAnalytics/feauter_profile/presentation/settings/UserModel.swift; sourceTree = SOURCE_ROOT; };
 		54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -522,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				54DD1B18292EABD00082AE3E /* view */,
+				54DD1B23292FEC180082AE3E /* ChangePasswordViewModel.swift */,
 			);
 			path = change_password;
 			sourceTree = "<group>";
@@ -570,6 +575,7 @@
 			children = (
 				54E12AB2292D206B00A49B8D /* UserModel.swift */,
 				54DD1B07292E7D480082AE3E /* OpinionsModel.swift */,
+				54DD1B25292FEE890082AE3E /* ResultEnum.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -679,6 +685,7 @@
 				54D5CEAB2926A9F800B8275E /* Text.swift in Sources */,
 				54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */,
 				54D1233B292A934800D1E41F /* SettingsViewModel.swift in Sources */,
+				54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */,
 				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
 				54E12AB5292D44D200A49B8D /* ProfileViewModel.swift in Sources */,
 				545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */,
@@ -687,6 +694,7 @@
 				54DD1B0A292E82BE0082AE3E /* TopBarProfileView.swift in Sources */,
 				54D12339292A927100D1E41F /* SettingsView.swift in Sources */,
 				54DD1B0C292E84B00082AE3E /* LikeProfileView.swift in Sources */,
+				54DD1B24292FEC180082AE3E /* ChangePasswordViewModel.swift in Sources */,
 				54DD1B14292E88E80082AE3E /* OpinionsProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

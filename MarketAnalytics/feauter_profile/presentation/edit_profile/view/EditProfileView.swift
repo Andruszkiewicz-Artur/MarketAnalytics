@@ -11,7 +11,9 @@ import PhotosUI
 struct EditProfileView: View {
     
     @EnvironmentObject private var vmApp: AppViewModel
+    @EnvironmentObject private var vmNavigation: NavigationViewModel
     @StateObject private var vm: EditProfileViewModel = EditProfileViewModel()
+    @Environment(\.dismiss) private var dismiss
     private let width = UIScreen.main.bounds.width
     
     var body: some View {
@@ -55,6 +57,7 @@ struct EditProfileView: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
                     vm.saveData(vm: vmApp)
+                    dismiss()
                 }
             }
         }

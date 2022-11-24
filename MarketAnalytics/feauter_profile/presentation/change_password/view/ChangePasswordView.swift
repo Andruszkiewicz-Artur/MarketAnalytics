@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct ChangePasswordView: View {
+    
+    @EnvironmentObject private var vmApp: AppViewModel
+    @StateObject private var vm: ChangePasswordViewModel = ChangePasswordViewModel()
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            SecureField("New password...", text: $vm.password)
+                .padding(.vertical)
+            SecureField("Re-password...", text: $vm.rePassword)
+                .padding(.bottom)
+            CustomTextView(title: "Change password")
+                .padding(.vertical)
+                .onTapGesture(count: 1) {
+                    switch vm.resetPassword(vm: vmApp) {
+                    case .success: do {
+                        dismiss()
+                    }
+                    case .error: do {  }
+                    }
+                }
+            Spacer()
+        }
+        .padding()
+        .navigationTitle("Change password")
+        .navigationBarTitleDisplayMode(.inline)
+        .alert(isPresented: $vm.presentAlert) {
+            Alert(
+                title: Text("Error"),
+                message: Text(vm.presentMessage),
+                dismissButton: .cancel(Text("Ok"))
+            )
+        }
     }
 }
 
