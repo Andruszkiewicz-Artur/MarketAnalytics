@@ -62,10 +62,10 @@ class RegistrationViewModel: ObservableObject {
             }
                     
             vm.db.child("user").child(id).child("username").setValue(self.userName)
-            vm.db.child("user").child(id).child("isAdmin").setValue(false)
             
             vmNavigation.backTooRoot(where: .login)
             vm.isSignedIn = true
+            vm.presentLogIn = false
         }
     }
     

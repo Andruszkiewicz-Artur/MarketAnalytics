@@ -10,13 +10,10 @@ import SwiftUI
 
 class NavigationViewModel: ObservableObject {
     
-    var path = NavigationPath() {
-        didSet {
-            print("path count: \(path.count)")
-        }
-    }
+    @Published var path = NavigationPath()
+    @Published var selectionTab: Int = 0
     
-    var loginPath = NavigationPath() {
+    @Published var loginPath = NavigationPath() {
         didSet {
             print("path count: \(path.count)")
         }

@@ -15,10 +15,11 @@ struct ChangeEmailView: View {
     
     var body: some View {
         VStack {
-            TextField("Email...", text: $vm.email)
-                .padding(.vertical)
+            Text("Current email: \(vm.currentEmail)")
             
-            CustomTextView(title: "Change Email")
+            BottomBorderTextField(hint: "Email...",isSecure: false, value: $vm.email)
+            
+            CustomTextView(title: "Save")
                 .onTapGesture(count: 1) {
                     switch vm.changeEmail(vm: vmApp) {
                         case.success: do {
@@ -42,7 +43,7 @@ struct ChangeEmailView: View {
             )
         }
         .onAppear {
-            vm.email = vmApp.auth.currentUser?.email ?? ""
+            vm.currentEmail = vmApp.auth.currentUser?.email ?? ""
         }
     }
 }

@@ -11,60 +11,50 @@ struct ProfileView: View {
     
     @EnvironmentObject private var vmApp: AppViewModel
     @StateObject private var vm: ProfileViewModel = ProfileViewModel()
+    @EnvironmentObject private var vmNavigation: NavigationViewModel
+
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
-        VStack {
-            TopBarProfileView(user: vm.user)
-            
-            DescriptionProfileView(description: vm.user.description)
-            
-            OpinionsProfileView(opinions: vm.user.opinions)
-            
-            Spacer()
-        }
-        .padding([.leading, .trailing])
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                NavigationLink(value: "Settings") {
-                    Image(systemName: "gearshape")
-                        .foregroundColor(Color.primary)
+        List {
+            Section {
+                NavigationLink(value: "EditProfile") {
+                    Text("Edit profile")
+                }
+                
+                NavigationLink(value: "ChangePasswordProfile") {
+                    Text("Change password")
+                }
+                
+                NavigationLink(value: "ChangeEmailProfile") {
+                    Text("Change email")
                 }
             }
             
-            ToolbarItem(placement: .navigationBarLeading) {
-                Text(vmApp.user?.userName ?? "")
-                    .font(.title2)
+            Section {
+                HStack {
+                    Spacer()
+                    Text("Log Out")
+                        .foregroundColor(Color.red)
+                        .onTapGesture(count: 1) {
+                            vm.logOut(vm: vmApp, vmNavigation: vmNavigation)
+                        }
+                    Spacer()
+                }
             }
         }
-        .navigationDestination(for: String.self) { string in
-            switch string {
-                case "Settings": do {
-                    SettingsView()
-                }
-                case "EditProfile": do {
-                    EditProfileView()
-                }
-                case "ChangePasswordProfile": do {
-                    ChangePasswordView()
-                }
-                case "ChangeEmailProfile": do {
-                    ChangeEmailView()
-                }
-                default: do {  }
-            }
-        }
-        .navigationTitle("Account")
         .accentColor(.primary)
         .onAppear {
-            if let user = vmApp.user {
-                vm.user = user
+            vmNavigation.selectionTab = 2
+        }
+        .toolbar {
+            if vmNavigation.selectionTab == 2 {
+                ToolbarItem(placement: .principal) {
+                    Text(vmApp.user?.userName ?? "username")
+                }
             }
         }
-//        .onChange(of: vmApp.user) { newValue in
-//            if let user = vmApp.user {
-//                vm.user = user
-//            }
-//        }
+
     }
 }
 

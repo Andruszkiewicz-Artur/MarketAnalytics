@@ -8,25 +8,38 @@
 import Foundation
 import PhotosUI
 import _PhotosUI_SwiftUI
+import FirebaseAuth
 
 class EditProfileViewModel: ObservableObject {
     
     @Published var user: UserModel = UserModel(
         id: "",
-        userName: "",
-        image: nil,
-        likes: 0,
-        dislikes: 0,
-        description: "",
-        isAdmin: false,
-        opinions: []
+        userName: ""
     )
     
-    @Published var photos: [PhotosPickerItem] = []
+    @Published var isPresentedRemoveAccount: Bool = false
     
     func saveData(vm: AppViewModel) {
         if !user.userName.isEmpty {
             vm.sendDataToDB(user: user)
         }
+    }
+    
+    func removeAccount(vm: AppViewModel, completion: @escaping (Bool) -> ()) {
+        if let user = Auth.auth().currentUser {
+            user.delete { error in
+                guard error == nil else {
+                    completion(false)
+                    return
+                }
+                
+                vm.db.child("user").child(user.uid).removeValue()
+                vm.user = nil
+                vm.presentLogIn = true
+                completion(true)
+            }
+        }
+        
+        completion(false)
     }
 }

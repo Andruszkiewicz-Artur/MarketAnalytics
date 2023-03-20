@@ -16,7 +16,8 @@ class SettingsViewModel: ObservableObject {
             try vm.auth.signOut()
             vm.removeUser()
             vmNavigation.backTooRoot(where: .standard)
-            print("Log Out")
+            vm.isSignedIn = false
+            vm.user = nil
         } catch {
             print(error)
         }

@@ -49,20 +49,6 @@ struct ChooseOptionView: View {
                 .padding([.top])
             }
             .padding()
-            .navigationDestination(for: String.self) { string in
-                switch string {
-                case "Login": do {
-                    LoginView()
-                }
-                case "Register": do {
-                    RegistrationView()
-                }
-                case "Forget": do {
-                    ForgetPasswordView()
-                }
-                default: do {}
-                }
-            }
         }
     }
 }

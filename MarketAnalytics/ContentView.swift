@@ -20,23 +20,20 @@ struct ContentView: View {
                         Image(systemName: "waveform.path.ecg")
                         Text("Stock")
                     }
-                NewsView()
-                    .tabItem {
-                        Image(systemName: "newspaper")
-                        Text("News")
-                    }
+                    .tag(0)
                 ProfileView()
                     .tabItem {
                         Image(systemName: "person")
                         Text("Profile")
                     }
+                    .tag(1)
             }
             .accentColor(Color.theme.accent)
-            .fullScreenCover(isPresented: $vmApp.isSignedIn) {
-                ChooseOptionView()
-            }
         }
         .accentColor(Color.primary)
+        .fullScreenCover(isPresented: $vmApp.presentLogIn) {
+            LoginView()
+        }
     }
 }
 

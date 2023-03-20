@@ -15,11 +15,11 @@ struct ChangePasswordView: View {
     
     var body: some View {
         VStack {
-            SecureField("New password...", text: $vm.password)
-                .padding(.vertical)
-            SecureField("Re-password...", text: $vm.rePassword)
+            BottomBorderTextField(hint: "New password...",isSecure: true , value: $vm.password)
+            BottomBorderTextField(hint: "Re-password...",isSecure: true, value: $vm.rePassword)
                 .padding(.bottom)
-            CustomTextView(title: "Change password")
+            
+            CustomTextView(title: "Save")
                 .padding(.vertical)
                 .onTapGesture(count: 1) {
                     switch vm.resetPassword(vm: vmApp) {

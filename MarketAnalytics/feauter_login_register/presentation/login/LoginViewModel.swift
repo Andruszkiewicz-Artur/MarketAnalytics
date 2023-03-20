@@ -25,27 +25,28 @@ class LoginViewModel: ObservableObject {
     }
     @Published var presentError: Bool = false
  
-    func logIn(vm: AppViewModel, vmNavigation: NavigationViewModel) {
+    func logIn(vm: AppViewModel, vmNavigation: NavigationViewModel, completion: @escaping (Bool) -> ()) {
         guard !email.isEmpty, !password.isEmpty else {
             errorMessage = "Fill in all fields!"
+            completion(false)
             return
         }
             
         vm.auth.signIn(withEmail: email, password: password) { result, error in
             guard result != nil, error == nil else {
                 self.errorMessage = "Data are not correct!"
+                completion(false)
                 return
             }
             
             vmNavigation.backTooRoot(where: .login)
             vm.isSignedIn = true
+            vm.presentLogIn = false
+            completion(true)
         }
-        
-        print(vm.isSignedIn)
     }
     
     func hideError() {
         errorMessage = ""
     }
-    
 }

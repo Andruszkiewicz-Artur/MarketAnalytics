@@ -9,6 +9,19 @@ import Foundation
 
 class ProfileViewModel: ObservableObject {
     
-    @Published var user = UserModel(id: "", userName: "", likes: 0, dislikes: 0, description: "", isAdmin: false, opinions: [])
+    @Published var user = UserModel(id: "", userName: "")
     
+    func logOut(vm: AppViewModel, vmNavigation: NavigationViewModel) {
+        
+        do {
+            try vm.auth.signOut()
+            vm.removeUser()
+            vmNavigation.backTooRoot(where: .standard)
+            vm.presentLogIn = true
+            vm.user = nil
+            print("Log Out")
+        } catch {
+            print(error)
+        }
+    }
 }

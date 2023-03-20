@@ -8,13 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct UserModel: Identifiable {
+struct UserModel: Identifiable, Hashable {
     let id: String
     var userName: String
-    var image: Data?
-    var likes: Int
-    var dislikes: Int
-    var description: String
-    var isAdmin: Bool
-    var opinions: [OpinionModel]
 }

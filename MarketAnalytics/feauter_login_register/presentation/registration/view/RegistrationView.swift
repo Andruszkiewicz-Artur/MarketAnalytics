@@ -12,6 +12,7 @@ struct RegistrationView: View {
     @StateObject private var vm: RegistrationViewModel = RegistrationViewModel()
     @EnvironmentObject private var vmApp: AppViewModel
     @EnvironmentObject private var vmNavigation: NavigationViewModel
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack {
@@ -66,6 +67,9 @@ struct RegistrationView: View {
                 CustomTextView(title: "Sign up")
                     .onTapGesture(count: 1) {
                         vm.signIn(vm: vmApp, vmNavigation: vmNavigation)
+                        if vmApp.presentLogIn == false {
+                            dismiss()
+                        }
                     }
                     .padding([.top], 40)
                 

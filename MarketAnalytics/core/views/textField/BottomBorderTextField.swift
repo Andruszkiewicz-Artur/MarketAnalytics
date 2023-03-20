@@ -1,24 +1,20 @@
 //
-//  CustomTextField.swift
+//  BottomBorderTextField.swift
 //  MarketAnalytics
 //
-//  Created by Artur Andruszkiewicz on 17/11/2022.
+//  Created by Artur Andruszkiewicz on 08/02/2023.
 //
 
 import SwiftUI
 
-struct CustomTextField: View {
+struct BottomBorderTextField: View {
     
-    let systemName: String
-    let hint: String
-    var isSecure: Bool = false
+    var hint: String
+    var isSecure: Bool
     @Binding var value: String
     
     var body: some View {
         HStack(alignment: .center) {
-            Image(systemName: systemName)
-                .padding()
-                .font(.system(size: 25))
             if isSecure {
                 SecureField(hint, text: $value)
                     .font(.title3)
@@ -31,9 +27,7 @@ struct CustomTextField: View {
                     .autocapitalization(.none)
             }
         }
-        .overlay {
-            RoundedRectangle(cornerRadius: 10)
-                .stroke(LinearGradient(colors: [Color.theme.accent, Color.theme.secondaryAccent], startPoint: .leading, endPoint: .trailing), lineWidth: 3)
-        }
+        .overlay(Divider().background(Color.theme.accent), alignment: .bottom)
+        .padding(.vertical)
     }
 }

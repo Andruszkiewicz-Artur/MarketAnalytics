@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct NewsView: View {
+    @EnvironmentObject private var vmNavigation: NavigationViewModel
+
     var body: some View {
-        Text("News")
+        VStack {
+            
+        }
+        .onAppear {
+            vmNavigation.selectionTab = 1
+        }
+        .toolbar {
+            if vmNavigation.selectionTab == 1 {
+                ToolbarItem(placement: .principal) {
+                    Text("News")
+                }
+            }
+        }
     }
 }
 

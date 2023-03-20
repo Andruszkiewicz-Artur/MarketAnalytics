@@ -36,9 +36,10 @@ struct CustomTextView: View {
         )
         .foregroundColor(isBorder ? Color.primary : Color.white)
         .overlay(
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 100)
                 .stroke(isBorder ? color : clear, lineWidth: 3)
         )
+        .padding(.vertical)
     }
     
 }

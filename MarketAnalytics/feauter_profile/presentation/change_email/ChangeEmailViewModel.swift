@@ -10,6 +10,7 @@ import Foundation
 class ChangeEmailViewModel: ObservableObject {
 
     //Data
+    @Published var currentEmail: String = ""
     @Published var email: String = ""
     
     //Alert
