@@ -32,6 +32,8 @@
 		5440AE53299BD82E00BE8E99 /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5440AE52299BD82E00BE8E99 /* CryptoModel.swift */; };
 		544B520029BF78C600B459D8 /* liveChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B51FF29BF78C600B459D8 /* liveChatView.swift */; };
 		544B520229C4409A00B459D8 /* CurrentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B520129C4409A00B459D8 /* CurrentDataModel.swift */; };
+		544B520529CB562C00B459D8 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 544B520429CB562C00B459D8 /* OpenAISwift */; };
+		544B520729CB57E000B459D8 /* OpinionAIEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544B520629CB57E000B459D8 /* OpinionAIEnum.swift */; };
 		545E686F292541D2006F4B85 /* MarketAnalyticsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */; };
 		545E6873292541D4006F4B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6872292541D4006F4B85 /* Assets.xcassets */; };
 		545E6876292541D4006F4B85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 545E6875292541D4006F4B85 /* Preview Assets.xcassets */; };
@@ -100,6 +102,7 @@
 		5440AE52299BD82E00BE8E99 /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		544B51FF29BF78C600B459D8 /* liveChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = liveChatView.swift; sourceTree = "<group>"; };
 		544B520129C4409A00B459D8 /* CurrentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDataModel.swift; sourceTree = "<group>"; };
+		544B520629CB57E000B459D8 /* OpinionAIEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpinionAIEnum.swift; sourceTree = "<group>"; };
 		545E686B292541D2006F4B85 /* MarketAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarketAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		545E686E292541D2006F4B85 /* MarketAnalyticsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketAnalyticsApp.swift; sourceTree = "<group>"; };
 		545E6872292541D4006F4B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +152,7 @@
 				54E12AAA292CC96A00A49B8D /* FirebaseAnalytics in Frameworks */,
 				54E12AA4292CC75A00A49B8D /* FirebaseAuth in Frameworks */,
 				54E12AAE292CCD5800A49B8D /* FirebaseFirestore in Frameworks */,
+				544B520529CB562C00B459D8 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				5440AE4B299BB47700BE8E99 /* WhichTypeCurrency.swift */,
+				544B520629CB57E000B459D8 /* OpinionAIEnum.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -701,6 +706,7 @@
 				54E12AA9292CC96A00A49B8D /* FirebaseAnalytics */,
 				54E12AAB292CC9C300A49B8D /* FirebaseAnalyticsSwift */,
 				54E12AAD292CCD5800A49B8D /* FirebaseFirestore */,
+				544B520429CB562C00B459D8 /* OpenAISwift */,
 			);
 			productName = MarketAnalytics;
 			productReference = 545E686B292541D2006F4B85 /* MarketAnalytics.app */;
@@ -732,6 +738,7 @@
 			mainGroup = 545E6862292541D2006F4B85;
 			packageReferences = (
 				54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				544B520329CB562C00B459D8 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
 			);
 			productRefGroup = 545E686C292541D2006F4B85 /* Products */;
 			projectDirPath = "";
@@ -803,6 +810,7 @@
 				54D5CE9A29269AF000B8275E /* AppViewModel.swift in Sources */,
 				5440AE262994F29D00BE8E99 /* CreateEditChatView.swift in Sources */,
 				5440AE50299BB6D600BE8E99 /* LineView.swift in Sources */,
+				544B520729CB57E000B459D8 /* OpinionAIEnum.swift in Sources */,
 				54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */,
 				5440AE2A2995B7A800BE8E99 /* StockViewModel.swift in Sources */,
 				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
@@ -1030,6 +1038,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		544B520329CB562C00B459D8 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1041,6 +1057,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		544B520429CB562C00B459D8 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 544B520329CB562C00B459D8 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
 		54E12AA3292CC75A00A49B8D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 54E12AA2292CC75A00A49B8D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

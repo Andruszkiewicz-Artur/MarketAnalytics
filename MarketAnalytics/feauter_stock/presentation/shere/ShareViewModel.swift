@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import OpenAISwift
 
 class ShareViewModel: ObservableObject {
     
@@ -14,12 +15,18 @@ class ShareViewModel: ObservableObject {
     @Published var currencyData: [CurrencySimpleDataModel] = []
     @Published var minChart: Double = 0
     @Published var maxChart: Double = 1
+    @Published var opinion: OpinionAIEnum = .dontKnow
     
+    private var client: OpenAISwift?
     
     func setUp(name: String) {
         chatType = ChatModel(isGroup: true, isLive: true, name: name, id: name, lastMessage: "")
         
         getData(symbol: name)
+        
+        client = OpenAISwift(authToken: "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")
+        
+        send(text: "Invest in \(name) is current worth? yes or no")
     }
     
     private func getData(symbol: String) {
@@ -79,5 +86,25 @@ class ShareViewModel: ObservableObject {
         })
         
         dataTask.resume()
+    }
+    
+    private func send(text: String) {
+        client?.sendCompletion(with: text,
+                               maxTokens: 500,
+                               completionHandler: { result in
+            switch result {
+            case .success(let model):
+                let output = model.choices.first?.text ?? ""
+                print("Opinion ai: \(output)")
+                
+                if output.lowercased().contains("yes") {
+                    self.opinion = .invest
+                } else if output.lowercased().contains("no") {
+                    self.opinion = .dontInvest
+                }
+            case .failure:
+                    break
+            }
+        })
     }
 }

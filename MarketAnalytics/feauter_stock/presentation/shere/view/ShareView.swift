@@ -92,15 +92,23 @@ struct ShareView: View {
             
             VStack {
                 HStack {
-                    Text("Czy warto kupić aktywo(Opinia)?")
+                    Text("Is it worth buying an asset(Opinion)?")
                         .foregroundColor(.gray)
                     Spacer()
                 }
                 HStack {
-                    Text("Opinia AI:")
+                    Text("Opinion AI:")
                     Spacer()
-                    Text("Tak")
-                        .foregroundColor(.theme.green)
+                    if vm.opinion == .invest {
+                        Text("Invest")
+                            .foregroundColor(.theme.green)
+                    } else if vm.opinion == .dontKnow {
+                        Text("Don`t Know")
+                            .foregroundColor(.gray)
+                    } else {
+                        Text("Don`t Invest")
+                            .foregroundColor(.theme.red)
+                    }
                 }
                 .font(.system(size: 20))
             }
