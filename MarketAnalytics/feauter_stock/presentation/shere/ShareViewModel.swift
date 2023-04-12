@@ -24,7 +24,7 @@ class ShareViewModel: ObservableObject {
         
         getData(symbol: name)
         
-        client = OpenAISwift(authToken: "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")
+        client = OpenAISwift(authToken: "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")
         
         send(text: "Invest in \(name) is current worth? yes or no")
     }
