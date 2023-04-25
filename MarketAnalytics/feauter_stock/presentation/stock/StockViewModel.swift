@@ -86,7 +86,7 @@ class StockViewModel: ObservableObject {
     
     func getForexData() {
         let headers = [
-            "X-RapidAPI-Key": "a989330f8emsh32bf2225ba6bed5p189908jsn02304c89d5ad",
+            "X-RapidAPI-Key": StaticString.apiKey,
             "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com"
         ]
         
@@ -120,7 +120,7 @@ class StockViewModel: ObservableObject {
     
     func getCryptoData() {
         let headers = [
-            "X-RapidAPI-Key": "a989330f8emsh32bf2225ba6bed5p189908jsn02304c89d5ad",
+            "X-RapidAPI-Key": StaticString.apiKey,
             "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com"
         ]
 
@@ -154,7 +154,7 @@ class StockViewModel: ObservableObject {
     
     private func searchSymbol(symbol: String) {
         let headers = [
-            "X-RapidAPI-Key": "a989330f8emsh32bf2225ba6bed5p189908jsn02304c89d5ad",
+            "X-RapidAPI-Key": StaticString.apiKey,
             "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com"
         ]
 
@@ -209,7 +209,7 @@ class StockViewModel: ObservableObject {
     
     private func checkValue(symbol: String) {
         let headers = [
-            "X-RapidAPI-Key": "a989330f8emsh32bf2225ba6bed5p189908jsn02304c89d5ad",
+            "X-RapidAPI-Key": StaticString.apiKey,
             "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com"
         ]
 

@@ -107,7 +107,7 @@ struct StockView: View {
         .navigationDestination(for: CurrencyModel.self, destination: { currency in
             ShareView(currency: currency)
         })
-        .searchable(text: $vm.searchValue, placement: .sidebar)
+        .searchable(text: $vm.searchValue)
         .navigationDestination(for: ChatModel.self) { chat in
             ChatView(chat: chat, user: nil)
         }

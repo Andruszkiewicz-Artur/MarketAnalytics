@@ -12,7 +12,7 @@ struct ShareView: View {
     
     @StateObject private var vm: ShareViewModel = ShareViewModel()
     
-    var currency: CurrencyModel
+    private var currency: CurrencyModel
     
     init(currency: CurrencyModel) {
         self.currency = currency
@@ -125,6 +125,21 @@ struct ShareView: View {
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
             vm.setUp(name: currency.name)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Image(systemName: "info.circle")
+                    .onTapGesture {
+                        if vm.presentInformation == false {
+                            vm.presentInformation = true
+                        }
+                    }
+            }
+        }
+        .sheet(isPresented: $vm.presentInformation) {
+            Text(vm.information)
+                .padding(.horizontal)
+                .presentationDetents([.fraction(0.2), .medium, .large])
         }
     }
 }

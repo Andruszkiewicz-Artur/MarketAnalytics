@@ -16,6 +16,8 @@ class ShareViewModel: ObservableObject {
     @Published var minChart: Double = 0
     @Published var maxChart: Double = 1
     @Published var opinion: OpinionAIEnum = .dontKnow
+    @Published var presentInformation: Bool = false
+    @Published var information: String = ""
     
     private var client: OpenAISwift?
     
@@ -24,14 +26,15 @@ class ShareViewModel: ObservableObject {
         
         getData(symbol: name)
         
-        client = OpenAISwift(authToken: "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")
+        client = OpenAISwift(authToken: "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")
         
         send(text: "Invest in \(name) is current worth? yes or no")
+        takeInformationAboutShare(text: "What is \(name)?")
     }
     
     private func getData(symbol: String) {
         let headers = [
-            "X-RapidAPI-Key": "a989330f8emsh32bf2225ba6bed5p189908jsn02304c89d5ad",
+            "X-RapidAPI-Key": StaticString.apiKey,
             "X-RapidAPI-Host": "twelve-data1.p.rapidapi.com"
         ]
         
@@ -60,7 +63,7 @@ class ShareViewModel: ObservableObject {
                 
                 var min: Double = Double(currencyData[0].open) ?? 1000
                 var max: Double = Double(currencyData[0].open) ?? 0
-                
+                                
                 currencyData.forEach { data in
                     guard let value = Double(data.open) else {
                         return
@@ -102,6 +105,21 @@ class ShareViewModel: ObservableObject {
                 } else if output.lowercased().contains("no") {
                     self.opinion = .dontInvest
                 }
+            case .failure:
+                    break
+            }
+        })
+    }
+    
+    private func takeInformationAboutShare(text: String) {
+        client?.sendCompletion(with: text,
+                               maxTokens: 500,
+                               completionHandler: { result in
+            switch result {
+            case .success(let model):
+                let output = model.choices.first?.text ?? ""
+                print("Information about share: \(output)")
+                self.information = output
             case .failure:
                     break
             }

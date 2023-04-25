@@ -74,6 +74,7 @@
 		54E12AAE292CCD5800A49B8D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 54E12AAD292CCD5800A49B8D /* FirebaseFirestore */; };
 		54E12AB3292D206B00A49B8D /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E12AB2292D206B00A49B8D /* UserModel.swift */; };
 		54E12AB5292D44D200A49B8D /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */; };
+		54F1D79F29F6E092002B904D /* StaticStringEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F1D79E29F6E092002B904D /* StaticStringEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		54DD1B2B292FF2EE0082AE3E /* ChangeEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewModel.swift; sourceTree = "<group>"; };
 		54E12AB2292D206B00A49B8D /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = MarketAnalytics/feauter_profile/presentation/settings/UserModel.swift; sourceTree = SOURCE_ROOT; };
 		54E12AB4292D44D200A49B8D /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		54F1D79E29F6E092002B904D /* StaticStringEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticStringEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 		545E687C2925537E006F4B85 /* core */ = {
 			isa = PBXGroup;
 			children = (
+				54F1D79D29F6E079002B904D /* static */,
 				54E12AB0292D205900A49B8D /* domain */,
 				54D5CEA82926A9D000B8275E /* views */,
 				54D5CE932926998B00B8275E /* data */,
@@ -683,6 +686,14 @@
 			path = model;
 			sourceTree = "<group>";
 		};
+		54F1D79D29F6E079002B904D /* static */ = {
+			isa = PBXGroup;
+			children = (
+				54F1D79E29F6E092002B904D /* StaticStringEnum.swift */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -812,6 +823,7 @@
 				5440AE50299BB6D600BE8E99 /* LineView.swift in Sources */,
 				544B520729CB57E000B459D8 /* OpinionAIEnum.swift in Sources */,
 				54DD1B26292FEE890082AE3E /* ResultEnum.swift in Sources */,
+				54F1D79F29F6E092002B904D /* StaticStringEnum.swift in Sources */,
 				5440AE2A2995B7A800BE8E99 /* StockViewModel.swift in Sources */,
 				54D5CE9729269A9600B8275E /* AppDelegate.swift in Sources */,
 				5440AE0F2992A5CA00BE8E99 /* AssetView.swift in Sources */,
